@@ -3,7 +3,9 @@
 #include <stdlib.h>
 //gcc -pthread -o progPrimosO progPrimosO.c
 //time -p ./progPrimosO 1000000 10 
-//primeiro valor é o número em si, o segundo o n de threads
+//Input made by command line.
+//first number determine where the program will stop looking for prime numbers.
+//second number determine how many threads it will create.
 int nums=0,*primos,n=0,ind=1,tam=0;
 pthread_mutex_t lock;
 void verifica(int y){
